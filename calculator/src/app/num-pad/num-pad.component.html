@@ -1,0 +1,28 @@
+<h1>{{title}}</h1>
+<h2>{{display}}</h2>
+<div class="btn-container">
+    <div class="row-container">
+        <button (click)="displayValue($event)" value="7">7</button>
+        <button (click)="displayValue($event)" value="8">8</button>
+        <button (click)="displayValue($event)" value="9">9</button>
+        <button (click)="displayValue($event)" value="-">-</button>
+    </div>
+    <div class="row-container">
+        <button (click)="displayValue($event)" value="4">4</button>
+        <button (click)="displayValue($event)" value="5">5</button>
+        <button (click)="displayValue($event)" value="6">6</button>
+        <button (click)="displayValue($event)" value="+">+</button>
+    </div>
+    <div class="row-container">
+        <button (click)="displayValue($event)" value="1">1</button>
+        <button (click)="displayValue($event)" value="2">2</button>
+        <button (click)="displayValue($event)" value="3">3</button>
+        <button (click)="displayValue($event)" value="*">*</button>
+    </div>
+    <div class="row-container">
+        <button (click)="clearDisplay()">C</button>
+        <button (click)="displayValue($event)" value="0">0</button>
+        <button (click)="calculateDisplay()">=</button>
+        <button (click)="displayValue($event)" value="/">/</button>
+    </div>
+</div>
